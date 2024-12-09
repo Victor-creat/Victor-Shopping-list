@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+.container{
+    padding: 20px;
+    width: 300px;
+    background: yellowgreen;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1 );
+
+}
+h1{
+    margin-top: 0;
+    text-align: center;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+}
+#item-input{
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+button{
+    padding: 10px;
+    background: violet;
+    border: none;
+    color: aqua;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background: purple;
+}
+#shopping-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+#shopping-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid yellow;
+    cursor: pointer;
+}
+#shopping-list li.purchased {
+    text-decoration: line-through;
+    color: hotpink;
+}
+#clear-list {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background:orange;
+    border: none;
+    color: green;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#clear-list:hover{
+    background: orange;
+}
+#mark-purchased-button{
+    margin-top: 20px;
+    padding: 10px;
+    background: purple;
+    border: none;
+    color: aquamarine;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#mark-purchased-button:hover{
+    background: green;
+}
+.edit-button{
+    margin-left: 10px;
+    background: indigo;
+    border: none;
+    color: blue;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.edit-button:hover{
+    background: turquoise;
+}
