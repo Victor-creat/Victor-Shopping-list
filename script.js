@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const shoppingList = document.getElementById('shopping-list');
     const clearListButton = document.getElementById('clear-list');
 
+    //An event listener for adding items to the list using a button
     addItemButton.addEventListener('click', () => {
         const itemText = itemInput.value.trim();
         if (itemText !== '') {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    //An event listener for editing items in the list
     shoppingList.addEventListener('click', (event) => {
         if (event.target.tagName === 'LI') {
             togglePurchased(event.target);
@@ -20,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             editItem(event.target.parentElement);
         }
     });
-
+    
+//Event listener for clearing items in the list
     clearListButton.addEventListener('click', () => {
         clearList();
     });
